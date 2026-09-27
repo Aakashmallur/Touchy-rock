@@ -1,8 +1,13 @@
 from tkinter import *
+import random
 
 DuM_CoMpUtEr_ChOiCeS=["rock","paper","sizzors"]
 def DuM_PlAyEr_ChOiCeS (pc):
     ClApO_TRON.config(text="player selected "+pc)
+    chineese_fatso=random.choice(DuM_CoMpUtEr_ChOiCeS)
+    oil_up_at_five_gramps_is_here.config(text="computer selected "+chineese_fatso)
+    if pc==chineese_fatso:
+        oil_up_label.config(text="tie")
 main= Tk()
 main.geometry("1000x1000")
 main.config(background="orange")
