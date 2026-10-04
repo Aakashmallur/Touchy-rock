@@ -8,6 +8,18 @@ def DuM_PlAyEr_ChOiCeS (pc):
     oil_up_at_five_gramps_is_here.config(text="computer selected "+chineese_fatso)
     if pc==chineese_fatso:
         oil_up_label.config(text="tie")
+    if pc=="rock"and chineese_fatso=="paper":
+        oil_up_label.config(text="computer wins")
+    if pc=="rock"and chineese_fatso=="sizzors":
+        oil_up_label.config(text="player wins")
+    if pc=="paper"and chineese_fatso=="rock":
+        oil_up_label.config(text="player wins")
+    if pc=="paper"and chineese_fatso=="sizzors":
+        oil_up_label.config(text="computer wins")
+    if pc=="sizzors"and chineese_fatso=="rock":
+        oil_up_label.config(text="computer wins") 
+    if pc=="sizzors"and chineese_fatso=="paper":
+        oil_up_label.config(text="player wins")
 main= Tk()
 main.geometry("1000x1000")
 main.config(background="orange")
@@ -33,7 +45,6 @@ oil_up_at_five_gramps_is_here=Label(main, text="comp selected N/A" ,font=("Arial
 oil_up_at_five_gramps_is_here.grid(row=5,column=0,pady=10)
 ClApO_TRON=Label(main, text="player selected N/A" ,font=("Arial",20))
 ClApO_TRON.grid(row=6,column=0,pady=20)
-
 
 
 
